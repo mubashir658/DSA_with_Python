@@ -1,0 +1,16 @@
+# Title: Move Zeroes
+# Submission ID: 2039920818
+# Status: Accepted
+# Date: June 20, 2026 at 08:31:47 PM GMT+5:30
+
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        for i in nums:
+            if i==0:
+                nums.remove(0)
+                nums.append(0)
+        print(nums)
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        
