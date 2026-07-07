@@ -1,0 +1,19 @@
+# Title: Rotate Image
+# Submission ID: 2059237323
+# Status: Accepted
+# Date: July 7, 2026 at 05:26:19 PM GMT+5:30
+
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
+        """
+        Do not return anything, modify matrix in-place instead.
+        """
+        m,n=len(matrix),len(matrix[0])
+        for r in range(n):
+            for c in range(r,m):
+                matrix[r][c],matrix[c][r]=matrix[c][r],matrix[r][c]
+        for i in range(m):
+            matrix[i].reverse()
+        
+
+        
